@@ -2,22 +2,69 @@
 <html lang="th">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>Hatafuku Studio 2.0 Pro</title>
-    <meta name="description" content="สตูดิโอออฟไลน์ 100% รวม 23 โมดูล สร้างใบงาน แบบฝึกคัดลายมือ อักษรไขว้ เขาวงกต ลูกโป่ง 3D พิกเซลอาร์ต โค้ดดิ้ง และแพ็กเกจจิ้งสินค้าเพื่อการพาณิชย์" />
-    <meta property="og:title" content="Hatafuku Studio 2.0 Pro" />
-    <meta property="og:description" content="สตูดิโอออฟไลน์ 100% รวม 23 โมดูล สร้างใบงาน แบบฝึกคัดลายมือ อักษรไขว้ เขาวงกต ลูกโป่ง 3D พิกเซลอาร์ต โค้ดดิ้ง และแพ็กเกจจิ้งสินค้าเพื่อการพาณิชย์" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hatafuku Studio Pro - สตูดิโอสื่อการสอนและครีเอทีฟ</title>
+    <meta name="description" content="ระบบรวมศูนย์สร้างใบงาน A4 คัดลายมือ คณิต เขาวงกต อักษรไขว้ วาดภาพ พิกเซลอาร์ต ป้าย 3D มินิเกม ฝึกพิมพ์ และลานโค้ดดิ้ง" />
+    <meta property="og:title" content="Hatafuku Studio Pro - สตูดิโอสื่อการสอนและครีเอทีฟ" />
+    <meta property="og:description" content="ระบบรวมศูนย์สร้างใบงาน A4 คัดลายมือ คณิต เขาวงกต อักษรไขว้ วาดภาพ พิกเซลอาร์ต ป้าย 3D มินิเกม ฝึกพิมพ์ และลานโค้ดดิ้ง" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/manifest.webmanifest" />
-    <script type="module" crossorigin src="/assets/index-THobJBXq.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CGsjyMcm.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Charm:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gaegu:wght@400;700&family=Gamja+Flower&family=Hi+Melody&family=Itim&family=JetBrains+Mono:wght@400;500;600;700&family=Mali:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans+Thai:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Sarabun:wght@400;500;600;700&family=Sriracha&family=Pattaya&family=Pridi:wght@400;600&family=Kanit:wght@400;600;700&family=Mitr:wght@400;600&family=Playpen+Sans+Thai:wght@400;700&family=Jua&family=Do+Hyeon&family=Black+Han+Sans&family=Nanum+Pen+Script&family=Single+Day&family=Dongle:wght@400;700&family=Yeon+Sung&family=East+Sea+Dokdo&family=Zen+Maru+Gothic:wght@400;700&family=Klee+One:wght@400;600&family=Mochiy+Pop+One&family=Potta+One&family=Dela+Gothic+One&family=RocknRoll+One&family=Yusei+Magic&family=Hachi+Maru+Pop&family=Kiwi+Maru:wght@400;500&family=ZCOOL+KuaiLe&family=ZCOOL+QingKe+HuangYou&family=ZCOOL+XiaoWei&family=Long+Cang&family=Liu+Jian+Mao+Cao&family=Zhi+Mang+Xing&family=Ma+Shan+Zheng&family=Yomogi&display=swap" rel="stylesheet">
+      <script>
+      // กันหน้าขาว: ล้าง Service Worker/แคชเก่า และโชว์ error บนหน้าจอ
+      (function () {
+        try {
+          if (navigator.serviceWorker) {
+            navigator.serviceWorker.getRegistrations().then(function (rs) {
+              rs = rs.filter(function (r) { var a = r.active || r.waiting || r.installing; return !(a && /app-sw\.js$/.test(a.scriptURL)); });
+              if (!rs.length) return;
+              Promise.all(rs.map(function (r) { return r.unregister(); }))
+                .then(function () { return window.caches ? caches.keys() : []; })
+                .then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); })
+                .then(function () { if (!sessionStorage.getItem('sw-cleared')) { sessionStorage.setItem('sw-cleared', '1'); location.reload(); } });
+            });
+          }
+        } catch (e) {}
+        function show(msg) {
+          var d = document.getElementById('err-overlay');
+          if (!d) {
+            d = document.createElement('pre');
+            d.id = 'err-overlay';
+            d.style.cssText = 'position:fixed;z-index:99999;left:0;right:0;bottom:0;max-height:45vh;overflow:auto;margin:0;padding:12px;background:#7f1d1d;color:#fff;font:12px/1.4 monospace;white-space:pre-wrap';
+            document.addEventListener('DOMContentLoaded', function () { document.body.appendChild(d); });
+            if (document.body) document.body.appendChild(d);
+          }
+          d.textContent += msg + '\n';
+        }
+        window.addEventListener('error', function (e) { show('ERROR: ' + e.message + ' @' + (e.filename || '').split('/').pop() + ':' + e.lineno); });
+        window.addEventListener('unhandledrejection', function (e) { show('PROMISE: ' + (e.reason && e.reason.message || e.reason)); });
+      })();
+    </script>
+      <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="theme-color" content="#e11d48" />
   </head>
-  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-pink-100 selection:text-pink-800">
+  <body class="bg-slate-50 text-slate-800 antialiased selection:bg-pink-200 selection:text-pink-900">
     <div id="root"></div>
-    <script src="/hatafuku-core.js"></script>
-    <script src="/hatafuku-palette.js"></script>
+    <script type="module" src="/src/main.tsx"></script>
+      <script>
+      // ถ้าเปิดโฟลเดอร์หลักด้วยเซิร์ฟเวอร์ธรรมดา (ไม่ผ่าน Vite) แอพจะไม่ขึ้น -> พาไปเวอร์ชัน build ใน dist/ อัตโนมัติ
+      setTimeout(function () {
+        var r = document.getElementById('root');
+        if (r && !r.children.length && !document.getElementById('err-overlay')) {
+          location.replace('./dist/index.html');
+        }
+      }, 2500);
+    </script>
+    <script src="./legacy/hatafuku-core.js"></script>
+    <script src="./legacy/hatafuku-palette-app.js"></script>
+    <script>
+      if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+        window.addEventListener('load', function () { navigator.serviceWorker.register('./app-sw.js').catch(function () {}); });
+      }
+    </script>
   </body>
 </html>
+
